@@ -18,7 +18,7 @@
 //   }
 // }
 
-//Binary Search Code:-
+// Binary Search Code:-
 
 // class Array{
 //   public static void main(String[] args) {
@@ -166,4 +166,32 @@
            
 
 // }
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+class Array{
+ public static void main (String[] args) throws java.lang.Exception
+	{
+	    int[] arr=new int[4];
+	    Scanner sc=new Scanner(System.in);
+	    for(int i=0;i<arr.length;i++)
+	    {
+	        arr[i]=sc.nextInt();
+	    }
+      int temp=0;
+      int min=0;
+	    for(int i=0;i<=arr.length;i++){
+	        if(arr[i]<min){
+              min=arr[i];
+	            temp=arr[i];
+	            arr[i]=min;
+	            min=arr[i];
+	        }
+	    }
+      System.out.println(Arrays.toString(arr));
+
+	}
+  
+}
 
